@@ -5,15 +5,14 @@
 
 @section('content')
     <div class="callout callout-info">
-        <h4>Tip!</h4>
+        <h4>Ojo!</h4>
 
-        <p>Add the fixed class to the body tag to get this layout. The fixed layout is your best option if your sidebar
-            is bigger than your content because it prevents extra unwanted scrolling.</p>
+        <p>Puedes crear, editar y eliminar vacantes de la lista de registros desde esta vista.</p>
     </div>
     <!-- Default box -->
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Title</h3>
+            <h3 class="box-title">Lista de vacantes</h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -23,12 +22,37 @@
             </div>
         </div>
         <div class="box-body">
-            Start creating your amazing application!
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Cliente</th>
+                        <th>Descripcion</th>
+                        <th>Fecha de Registro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @forelse($jobs as $job)
+                        <tr>
+                            <td>{{ $job->title }}</td>
+                            <td>{{ $job->client_id }}</td>
+                            <td>{{ $job->description }}</td>
+                            <td>{{ $job->created_at }}</td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td colspan="4" align="center">No hay vacantes registradas!</td>
+                        </tr>
+                    @endforelse
+                </tbody>
+            </table>
         </div>
         <!-- /.box-body -->
+        @empty($jobs)
         <div class="box-footer">
-            Footer
+            {{ $jobs->links() }}
         </div>
+        @endempty
         <!-- /.box-footer-->
     </div>
     <!-- /.box -->

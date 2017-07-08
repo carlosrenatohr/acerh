@@ -10,7 +10,7 @@ class JobsController extends Controller
 {
     use TemplateTrait;
     protected $model;
-    protected $bc = ['Jobs' => '/jobs'];
+    protected $bc = ['Vacantes' => '/jobs'];
     public function __construct(Job $job)
     {
         $this->model = $job;
@@ -19,11 +19,10 @@ class JobsController extends Controller
     //
     public function index() {
         $jobs = $this->model->get();
-        $this->breadcrumbs = array_merge($this->breadcrumbs, ['List' => '-' ]);
 
         return view('jobs.index', [
             'jobs' => $jobs,
-            'breadcrumbs' => $this->getBreadCrumbs($this->bc, ['List' => '-' ])
+            'breadcrumbs' => $this->getBreadCrumbs($this->bc, ['Activas' => '-' ])
         ]);
     }
 }

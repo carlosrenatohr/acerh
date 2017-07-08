@@ -31,9 +31,9 @@
         <!-- Logo -->
         <a href="../../index2.html" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
-            <span class="logo-mini"><b>A</b>LT</span>
+            <span class="logo-mini"><b>AC</b>T</span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg"><b>Admin</b>LTE</span>
+            <span class="logo-lg"><b>AC</b>TALENTOS</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -48,98 +48,97 @@
             <div class="navbar-custom-menu">
                 <ul class="nav navbar-nav">
                     <!-- Messages: style can be found in dropdown.less-->
-                    <li class="dropdown messages-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">4</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 4 messages</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li><!-- start message -->
-                                        <a href="#">
-                                            <div class="pull-left">
-                                                <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                            </div>
-                                            <h4>
-                                                Support Team
-                                                <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                            </h4>
-                                            <p>Why not buy a new awesome theme?</p>
-                                        </a>
-                                    </li>
-                                    <!-- end message -->
-                                </ul>
-                            </li>
-                            <li class="footer"><a href="#">See All Messages</a></li>
-                        </ul>
-                    </li>
-                    <!-- Notifications: style can be found in dropdown.less -->
-                    <li class="dropdown notifications-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">10</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 10 notifications</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="footer"><a href="#">View all</a></li>
-                        </ul>
-                    </li>
-                    <!-- Tasks: style can be found in dropdown.less -->
-                    <li class="dropdown tasks-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="fa fa-flag-o"></i>
-                            <span class="label label-danger">9</span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li class="header">You have 9 tasks</li>
-                            <li>
-                                <!-- inner menu: contains the actual data -->
-                                <ul class="menu">
-                                    <li><!-- Task item -->
-                                        <a href="#">
-                                            <h3>
-                                                Design some buttons
-                                                <small class="pull-right">20%</small>
-                                            </h3>
-                                            <div class="progress xs">
-                                                <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                    <span class="sr-only">20% Complete</span>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <!-- end task item -->
-                                </ul>
-                            </li>
-                            <li class="footer">
-                                <a href="#">View all tasks</a>
-                            </li>
-                        </ul>
-                    </li>
+                    {{--<li class="dropdown messages-menu">--}}
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-envelope-o"></i>--}}
+                            {{--<span class="label label-success">4</span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li class="header">You have 4 messages</li>--}}
+                            {{--<li>--}}
+                                {{--<!-- inner menu: contains the actual data -->--}}
+                                {{--<ul class="menu">--}}
+                                    {{--<li><!-- start message -->--}}
+                                        {{--<a href="#">--}}
+                                            {{--<div class="pull-left">--}}
+                                                {{--<img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">--}}
+                                            {{--</div>--}}
+                                            {{--<h4>--}}
+                                                {{--Support Team--}}
+                                                {{--<small><i class="fa fa-clock-o"></i> 5 mins</small>--}}
+                                            {{--</h4>--}}
+                                            {{--<p>Why not buy a new awesome theme?</p>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<!-- end message -->--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                            {{--<li class="footer"><a href="#">See All Messages</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                    {{--<!-- Notifications: style can be found in dropdown.less -->--}}
+                    {{--<li class="dropdown notifications-menu">--}}
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-bell-o"></i>--}}
+                            {{--<span class="label label-warning">10</span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li class="header">You have 10 notifications</li>--}}
+                            {{--<li>--}}
+                                {{--<!-- inner menu: contains the actual data -->--}}
+                                {{--<ul class="menu">--}}
+                                    {{--<li>--}}
+                                        {{--<a href="#">--}}
+                                            {{--<i class="fa fa-users text-aqua"></i> 5 new members joined today--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                            {{--<li class="footer"><a href="#">View all</a></li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
+                    {{--<!-- Tasks: style can be found in dropdown.less -->--}}
+                    {{--<li class="dropdown tasks-menu">--}}
+                        {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                            {{--<i class="fa fa-flag-o"></i>--}}
+                            {{--<span class="label label-danger">9</span>--}}
+                        {{--</a>--}}
+                        {{--<ul class="dropdown-menu">--}}
+                            {{--<li class="header">You have 9 tasks</li>--}}
+                            {{--<li>--}}
+                                {{--<!-- inner menu: contains the actual data -->--}}
+                                {{--<ul class="menu">--}}
+                                    {{--<li><!-- Task item -->--}}
+                                        {{--<a href="#">--}}
+                                            {{--<h3>--}}
+                                                {{--Design some buttons--}}
+                                                {{--<small class="pull-right">20%</small>--}}
+                                            {{--</h3>--}}
+                                            {{--<div class="progress xs">--}}
+                                                {{--<div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">--}}
+                                                    {{--<span class="sr-only">20% Complete</span>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                        {{--</a>--}}
+                                    {{--</li>--}}
+                                    {{--<!-- end task item -->--}}
+                                {{--</ul>--}}
+                            {{--</li>--}}
+                            {{--<li class="footer">--}}
+                                {{--<a href="#">View all tasks</a>--}}
+                            {{--</li>--}}
+                        {{--</ul>--}}
+                    {{--</li>--}}
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="../img/user2-160x160.jpg" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Alexander Pierce</span>
+                            <img src="{{ 'img/user2-160x160.jpg' }}" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Carlos Hernandez</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
                                 <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
                                 <p>
                                     Alexander Pierce - Web Developer
                                     <small>Member since Nov. 2012</small>
@@ -187,19 +186,19 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- Sidebar user panel -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                </div>
-                <div class="pull-left info">
-                    <p>Alexander Pierce</p>
-                    <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-                </div>
-            </div>
+            {{--<div class="user-panel">--}}
+                {{--<div class="pull-left image">--}}
+                    {{--<img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">--}}
+                {{--</div>--}}
+                {{--<div class="pull-left info">--}}
+                    {{--<p>Alexander Pierce</p>--}}
+                    {{--<a href="#"><i class="fa fa-circle text-success"></i> Online</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
             <!-- search form -->
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
-                    <input type="text" name="q" class="form-control" placeholder="Search...">
+                    <input type="text" name="q" class="form-control" placeholder="Buscar...">
                     <span class="input-group-btn">
                 <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
@@ -209,7 +208,7 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
-                <li class="header">MAIN NAVIGATION</li>
+                <li class="header">Menu Principal</li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
@@ -222,128 +221,26 @@
                 <li class="treeview active">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
-                        <span>Layout Options</span>
-                        <span class="label label-primary pull-right">4</span>
+                        <span>Vacantes Disponibles</span>
+                        <span class="label label-primary pull-right">{{ \App\Job::count() }}</span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-                        <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-                        <li class="active"><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                        <li><a href="collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                        <li class="{{ Request::is('jobs') ? 'active' : '' }}"><a href="{{ url('jobs') }}"><i class="fa fa-circle-o"></i> Activas</a></li>
+                        <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Archivadas</a></li>
+                        <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Rechazadas</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../widgets.html">
-                        <i class="fa fa-th"></i> <span>Widgets</span>
+                    <a href="javascript:void(0)">
+                        <i class="fa fa-th"></i> <span>Clientes</span>
                         <small class="label pull-right bg-green">new</small>
                     </a>
                 </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-pie-chart"></i>
-                        <span>Charts</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-                        <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-                        <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-                        <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-laptop"></i>
-                        <span>UI Elements</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-                        <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-                        <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-                        <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-                        <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-                        <li><a href="../UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-edit"></i> <span>Forms</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                        <li><a href="../forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-                        <li><a href="../forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-table"></i> <span>Tables</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-                        <li><a href="../tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../calendar.html">
-                        <i class="fa fa-calendar"></i> <span>Calendar</span>
-                        <small class="label pull-right bg-red">3</small>
-                    </a>
-                </li>
-                <li>
-                    <a href="../mailbox/mailbox.html">
-                        <i class="fa fa-envelope"></i> <span>Mailbox</span>
-                        <small class="label pull-right bg-yellow">12</small>
-                    </a>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-folder"></i> <span>Examples</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-                        <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>
-                        <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-                        <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-                        <li><a href="../examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-                        <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-                        <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-                        <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
-                        <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Page</a></li>
-                    </ul>
-                </li>
-                <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-share"></i> <span>Multilevel</span>
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </a>
-                    <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                        <li>
-                            <a href="#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
-                            <ul class="treeview-menu">
-                                <li><a href="#"><i class="fa fa-circle-o"></i> Level Two</a></li>
-                                <li>
-                                    <a href="#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
-                                    <ul class="treeview-menu">
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                        <li><a href="#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
-                    </ul>
-                </li>
-                <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
-                <li class="header">LABELS</li>
-                <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-                <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-                <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+                {{--<li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>--}}
+                {{--<li class="header">LABELS</li>--}}
+                {{--<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>--}}
+                {{--<li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>--}}
+                {{--<li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>--}}
             </ul>
         </section>
         <!-- /.sidebar -->
@@ -398,7 +295,7 @@
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
             <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+            <li class="active"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
@@ -509,70 +406,48 @@
             </div>
             <!-- /.tab-pane -->
             <!-- Stats tab content -->
-            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+            {{--<div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>--}}
             <!-- /.tab-pane -->
             <!-- Settings tab content -->
-            <div class="tab-pane" id="control-sidebar-settings-tab">
+            <div class="tab-pane active" id="control-sidebar-settings-tab">
                 <form method="post">
-                    <h3 class="control-sidebar-heading">General Settings</h3>
+                    <h3 class="control-sidebar-heading">Configuración Personal</h3>
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
-                            Report panel usage
-                            <input type="checkbox" class="pull-right" checked>
+                            <a href="#">Cuenta</a>
+                            {{--<input type="checkbox" class="pull-right" checked>--}}
                         </label>
-
                         <p>
-                            Some information about this general settings option
+                            Datos generales en la cuenta
+                        </p>
+                    </div>
+                    <!-- /.form-group -->
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            <a href="#">Cambiar contraseña</a>
+                            {{--<input type="checkbox" class="pull-right" checked>--}}
+                        </label>
+                        <p>
+
                         </p>
                     </div>
                     <!-- /.form-group -->
 
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Allow mail redirect
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Other sets of options are available
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
+                    <h3 class="control-sidebar-heading">Conexión</h3>
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
-                            Expose author name in posts
-                            <input type="checkbox" class="pull-right" checked>
-                        </label>
-
-                        <p>
-                            Allow the user to show his name in blog posts
-                        </p>
-                    </div>
-                    <!-- /.form-group -->
-
-                    <h3 class="control-sidebar-heading">Chat Settings</h3>
-
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Show me as online
+                            En línea?
                             <input type="checkbox" class="pull-right" checked>
                         </label>
                     </div>
                     <!-- /.form-group -->
 
-                    <div class="form-group">
-                        <label class="control-sidebar-subheading">
-                            Turn off notifications
-                            <input type="checkbox" class="pull-right">
-                        </label>
-                    </div>
-                    <!-- /.form-group -->
 
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
-                            Delete chat history
+                            Salir
                             <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
                         </label>
                     </div>

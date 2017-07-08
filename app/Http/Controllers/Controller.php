@@ -9,6 +9,6 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 
 class Controller extends BaseController
 {
-    protected $breadcrumbs = ['Dashboard' => '/'];
+    protected $breadcrumbs = ['Inicio' => '/'];
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
