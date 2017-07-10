@@ -18,6 +18,7 @@ class CreateJobsTable extends Migration
             $table->string('title');
             $table->integer('client_id', false, true);
             $table->text('description');
+            $table->tinyInteger('status', false)->comment('0:inactive 1:active')->default = 1;
             $table->timestamps();
         });
     }

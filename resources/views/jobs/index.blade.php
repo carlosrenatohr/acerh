@@ -35,7 +35,8 @@
                     @forelse($jobs as $job)
                         <tr>
                             <td>{{ $job->title }}</td>
-                            <td>{{ $job->client_id }}</td>
+{{--                            <td>{{ $job->client_id }}</td>--}}
+                            <td>{{ $job->client->company ? $job->client->company : $job->client_id }}</td>
                             <td>{{ $job->description }}</td>
                             <td>{{ $job->created_at }}</td>
                         </tr>
