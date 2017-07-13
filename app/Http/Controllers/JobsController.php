@@ -8,7 +8,6 @@ use Illuminate\Http\Request;
 
 class JobsController extends Controller
 {
-    use TemplateTrait;
     protected $model;
     protected $bc = ['Vacantes' => '/jobs'];
     public function __construct(Job $job)

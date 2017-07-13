@@ -12,11 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('jobs');
 });
 
 //Route::domain('admin')->group(function(){
 Route::prefix('jobs')->group(function() {
     Route::get('/', 'JobsController@index');
+});
+Route::prefix('clients')->group(function() {
+    Route::get('/', 'ClientsController@index');
 });
 //});

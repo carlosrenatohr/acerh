@@ -231,7 +231,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="javascript:void(0)">
+                    <a href="{{ url('clients') }}">
                         <i class="fa fa-th"></i> <span>Clientes</span>
                         <small class="label pull-right bg-green">new</small>
                     </a>
@@ -256,9 +256,7 @@
                 @yield('title', 'Titulo')
                 <small>@yield('subtitle', '')</small>
             </h1>
-            @php
-            //$breadcrumbs = ['Home' => '/', 'Jobs' => '/jobs', 'list' => '-'];
-            @endphp
+            @isset($breadcrumbs)
             <ol class="breadcrumb">
             @forelse($breadcrumbs as $item => $link)
                 @if ($loop->first)
@@ -272,6 +270,7 @@
                 -
             @endforelse
             </ol>
+            @endisset
         </section>
 
         <!-- Main content -->
