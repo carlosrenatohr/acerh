@@ -29,7 +29,7 @@
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="../../index2.html" class="logo">
+        <a href="/" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>AC</b>T</span>
             <!-- logo for regular state and mobile devices -->
@@ -214,8 +214,8 @@
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                        <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                     </ul>
                 </li>
                 <li class="treeview active">
@@ -226,8 +226,8 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class="{{ Request::is('jobs') ? 'active' : '' }}"><a href="{{ url('jobs') }}"><i class="fa fa-circle-o"></i> Activas</a></li>
-                        <li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Archivadas</a></li>
-                        <li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Rechazadas</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Archivadas</a></li>
+                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Rechazadas</a></li>
                     </ul>
                 </li>
                 <li>
