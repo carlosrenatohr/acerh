@@ -6,7 +6,6 @@
 @section('content')
     <div class="callout callout-info">
         <h4>Ojo!</h4>
-
         <p>Puedes crear, editar y eliminar vacantes de la lista de registros desde esta vista.</p>
     </div>
     <!-- Default box -->
@@ -22,6 +21,11 @@
             </div>
         </div>
         <div class="box-body">
+            <div class="col-sm-12">
+                <a href="{{ route('jobs.create') }}" class="btn btn-info pull-right">
+                    <i class="fa fa-plus">Crear</i>
+                </a>
+            </div>
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
@@ -29,16 +33,28 @@
                         <th>Cliente</th>
                         <th>Descripcion</th>
                         <th>Fecha de Registro</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     @forelse($jobs as $job)
                         <tr>
                             <td>{{ $job->title }}</td>
-{{--                            <td>{{ $job->client_id }}</td>--}}
                             <td>{{ $job->client->company ? $job->client->company : $job->client_id }}</td>
                             <td>{{ $job->description }}</td>
-                            <td>{{ $job->created_at }}</td>
+                            <td>{{ date('d-m-Y h:iA', strtotime($job->created_at)) }}</td>
+                            <td class="">
+                                <form action="{{ route('jobs.delete', $job->id) }}" class="job-del" method="post" style="margin: 0;">
+                                    <a href="{{ route('jobs.edit', [$job->client->name, $job->id]) }}" class="btn btn-info">
+                                        <i class="fa fa-edit"></i>
+                                    </a>
+                                    <a class="btn btn-danger btn-del" data-id="{{ $job->id }}" href="javascript:void(0);">
+                                        <i class="fa fa-eraser"></i>
+                                    </a>
+                                    <input type="hidden" name="_method" value="DELETE">
+                                    {!! csrf_field() !!}
+                                </form>
+                            </td>
                         </tr>
                     @empty
                         <tr>
@@ -49,11 +65,11 @@
             </table>
         </div>
         <!-- /.box-body -->
-        @empty($jobs)
+        @if(count($jobs) >= 15) {{--@empty($jobs)--}}
         <div class="box-footer">
             {{ $jobs->links() }}
         </div>
-        @endempty
+        @endunless
         <!-- /.box-footer-->
     </div>
     <!-- /.box -->
@@ -63,4 +79,5 @@
 <script src="{{ asset('plugins/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ asset('plugins/fastclick.min.js') }}"></script>
+<script src="{{ asset('js/acerh.js') }}"></script>
 @endpush

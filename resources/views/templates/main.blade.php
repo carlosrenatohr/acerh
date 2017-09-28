@@ -132,8 +132,8 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{{ 'img/user2-160x160.jpg' }}" class="user-image" alt="User Image">
-                            <span class="hidden-xs">Carlos Hernandez</span>
+                            <img src="{{ asset('img/default-user-image.png') }}" class="user-image" alt="User Image">
+                            <span class="hidden-xs">Guest</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
@@ -280,6 +280,7 @@
 
         <!-- Main content -->
         <section class="content">
+            @includeWhen(session()->has('success') or session()->has('error'), 'templates._alerts', [])
             @yield('content')
         </section>
         <!-- /.content -->

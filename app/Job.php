@@ -11,6 +11,6 @@ class Job extends Model
     protected $guarded = [];
 
     public function client() {
-        return $this->belongsTo('\App\Client', 'client_id', 'id');
+        return $this->belongsTo(Client::class, 'client_id', 'id');
     }
 }
