@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\JobsForm;
 use App\Job;
-use App\Http\Traits\TemplateTrait;
-use Illuminate\Http\Request;
 
 class JobsController extends Controller
 {

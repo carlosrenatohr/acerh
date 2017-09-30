@@ -11,7 +11,7 @@
     <!-- Default box -->
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Lista de vacantes</h3>
+            <h3 class="box-title">Vacantes</h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -21,12 +21,12 @@
             </div>
         </div>
         <div class="box-body">
-            <div class="col-sm-12">
+            <div class="col-sm-12" style="margin: 10px;">
                 <a href="{{ route('jobs.create') }}" class="btn btn-info pull-right">
                     <i class="fa fa-plus">Crear</i>
                 </a>
             </div>
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped text-center">
                 <thead>
                     <tr>
                         <th>Titulo</th>
@@ -40,12 +40,12 @@
                     @forelse($jobs as $job)
                         <tr>
                             <td>{{ $job->title }}</td>
-                            <td>{{ $job->client->company ? $job->client->company : $job->client_id }}</td>
+                            <td>{{ $job->client->name ? $job->client->name : $job->client_id }}</td>
                             <td>{{ $job->description }}</td>
-                            <td>{{ date('d-m-Y h:iA', strtotime($job->created_at)) }}</td>
-                            <td class="">
+                            <td>{{ $job->created }}</td>
+                            <td>
                                 <form action="{{ route('jobs.delete', $job->id) }}" class="job-del" method="post" style="margin: 0;">
-                                    <a href="{{ route('jobs.edit', [$job->client->name, $job->id]) }}" class="btn btn-info">
+                                    <a href="{{ route('jobs.edit', [$job->client->slug, $job->id]) }}" class="btn btn-info">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a class="btn btn-danger btn-del" data-id="{{ $job->id }}" href="javascript:void(0);">
@@ -65,11 +65,12 @@
             </table>
         </div>
         <!-- /.box-body -->
-        @if(count($jobs) >= 15) {{--@empty($jobs)--}}
+
+        @if(count($jobs) >= 15)
         <div class="box-footer">
             {{ $jobs->links() }}
         </div>
-        @endunless
+        @endif
         <!-- /.box-footer-->
     </div>
     <!-- /.box -->
@@ -79,5 +80,4 @@
 <script src="{{ asset('plugins/jquery.slimscroll.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ asset('plugins/fastclick.min.js') }}"></script>
-<script src="{{ asset('js/acerh.js') }}"></script>
 @endpush

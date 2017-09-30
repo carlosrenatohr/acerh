@@ -27,6 +27,11 @@ Route::prefix('jobs')->group(function() {
 
 Route::prefix('clients')->group(function() {
     Route::get('/', 'ClientsController@index');
+    Route::get('/create', 'ClientsController@create')->name('clients.create');
+    Route::post('/', 'ClientsController@store')->name('clients.store');
+    Route::get('/edit/{id}', 'ClientsController@edit')->name('clients.edit');
+    Route::put('/{id}', 'ClientsController@update')->name('clients.update');
+    Route::delete('/{id}', 'ClientsController@delete')->name('clients.delete');
 });
 
 Route::get('aplicar', 'CandidateController@form');

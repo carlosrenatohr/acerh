@@ -1,13 +1,14 @@
 @extends('templates.main')
-@section('title', 'Lista de vacantes')
+@section('title', 'Lista de Clientes')
 @section('subtitle', '')
-@section('titlePage', 'Lista de vacantes')
+@section('titlePage', 'Lista de Clientes')
 
 @section('content')
+
     <!-- Default box -->
     <div class="box">
         <div class="box-header with-border">
-            <h3 class="box-title">Crear vacante</h3>
+            <h3 class="box-title">Crear cliente</h3>
 
             <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
@@ -19,8 +20,9 @@
             </div>
         </div>
         <div class="box-body">
-            <form action="{{ route('jobs.store') }}" method="post" class="" role="form">
-                @include('jobs._form', [])
+            <form action="{{ route('clients.update', $client->id) }}" method="post" class="" role="form">
+                @include('clients._form')
+                <input type="hidden" name="_method" value="PUT">
             </form>
         </div>
         <!-- /.box-body -->

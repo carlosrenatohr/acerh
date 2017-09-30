@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
@@ -209,16 +209,16 @@
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
                 <li class="header">Menu Principal</li>
-                <li class="treeview">
+                <li class="{{ (request()->route()->getPrefix() == '/') ? 'active' : '' }}">
                     <a href="#">
-                        <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                        <i class="fa fa-dashboard"></i> <span>Dashboard</span> {{-- <i class="fa fa-angle-left pull-right"></i> --}}
                     </a>
-                    <ul class="treeview-menu">
-                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                        <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-                    </ul>
+                    {{--<ul class="treeview-menu">--}}
+                        {{--<li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i></a></li>--}}
+                        {{--<li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>--}}
+                    {{--</ul>--}}
                 </li>
-                <li class="treeview active">
+                <li class="treeview {{ (request()->route()->getPrefix() == '/jobs') ? 'active' : '' }}">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
                         <span>Vacantes Disponibles</span>
@@ -230,15 +230,15 @@
                         <li><a href="javascript:void(0)"><i class="fa fa-circle-o"></i> Rechazadas</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="{{ (request()->route()->getPrefix() == '/clients') ? 'active' : '' }}">
                     <a href="{{ url('clients') }}">
                         <i class="fa fa-th"></i> <span>Clientes</span>
-                        <small class="label pull-right bg-green">new</small>
+                        {{--<small class="label pull-right bg-green">new</small>--}}
                     </a>
                 </li>
-                <li>
+                <li style="font-weight: bold;font-size: 16px" class="active">
                     <a href=" {{ url('aplicar') }}">
-                        <i class="fa fa-notebook"></i>
+                        <i class="fa fa-external-link-square"></i>
                         <span>Empleo aplicación</span>
                     </a>
                 </li>
@@ -453,7 +453,7 @@
                     <div class="form-group">
                         <label class="control-sidebar-subheading">
                             Salir
-                            <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                            <a href="javascript:void(0);" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
                         </label>
                     </div>
                     <!-- /.form-group -->
@@ -479,6 +479,7 @@ crossorigin="anonymous"></script>
 <script src="{{ asset('dist/bundle.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{  asset('plugins/demo.js') }}"></script>
+<script src="{{ asset('js/acerh.js') }}"></script>
 @stack('scripts')
 </body>
 </html>

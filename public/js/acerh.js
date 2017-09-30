@@ -1,8 +1,9 @@
 $(function() {
-    $('.job-del .btn-del').on('click', function(e) {
+    $('.btn-del').on('click', function(e) {
         e.preventDefault();
-        if (confirm('Estas seguro que deseas eliminar esta vacante?')) {
+        if (confirm('Estas seguro que deseas eliminar este elemento?')) {
             $(this).parents('form').submit();
         }
-    })
+    });
+
 });

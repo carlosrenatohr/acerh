@@ -1,16 +1,14 @@
 <?php
 
 namespace App;
-
-use Illuminate\Database\Eloquent\Model;
-
-class Job extends Model
+class Job extends Base
 {
     //
     protected $table = 'jobs';
     protected $guarded = [];
 
-    public function client() {
+    public function client()
+    {
         return $this->belongsTo(Client::class, 'client_id', 'id');
     }
 }
