@@ -64,6 +64,7 @@ class ClientsController extends Controller
     public function delete($id) {
         $client = $this->model->find($id);
         if ($client) {
+            $client->jobs()->delete();
             $client->delete();
             return redirect('clients')->with('success', 'El cliente fue eliminado.');
         } else {
