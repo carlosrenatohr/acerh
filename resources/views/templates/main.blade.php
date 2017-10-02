@@ -237,7 +237,7 @@
                     </a>
                 </li>
                 <li style="font-weight: bold;font-size: 16px" class="active">
-                    <a href=" {{ url('aplicar') }}">
+                    <a href=" {{ url('aplicar') }}" target="_blank">
                         <i class="fa fa-external-link-square"></i>
                         <span>Empleo aplicación</span>
                     </a>
