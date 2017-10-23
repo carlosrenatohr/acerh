@@ -83,6 +83,10 @@ class ClientsController extends Controller
         }
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function delete($id) {
         $client = $this->model->find($id);
 
