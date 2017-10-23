@@ -35,5 +35,6 @@ Route::prefix('clients')->group(function() {
 });
 
 Route::get('aplicar', 'CandidateController@form');
+
 Route::post('aplicar/listo', 'CandidateController@submit');
 //});
