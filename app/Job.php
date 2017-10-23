@@ -5,6 +5,7 @@ class Job extends Base
 {
     //
     protected $table = 'jobs';
+
     protected $guarded = [];
 
     public function client()

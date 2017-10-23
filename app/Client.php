@@ -4,8 +4,8 @@ namespace App;
 
 class Client extends Base
 {
-    //
     protected $table = 'clients';
+
     protected $guarded = [];
 
     public function jobs() {
