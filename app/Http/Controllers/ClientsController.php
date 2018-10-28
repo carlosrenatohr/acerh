@@ -53,9 +53,8 @@ class ClientsController extends Controller
 
         if ($created) {
             return redirect('clients')->with('success', 'Tu cliente fue agregada a la lista de activas.');
-        } else {
-            return redirect()->withInput($input)->with('error', 'It was not possible to create the new client.');
         }
+        return redirect()->withInput($input)->with('error', 'It was not possible to create the new client.');
     }
 
     /**
@@ -72,15 +71,15 @@ class ClientsController extends Controller
     public function update($id, ClientsForm $request)
     {
         $client = $this->model->find($id);
+
         $input = array_except($request->all(), ['_token']);
         $input['slug'] = $this->slugify($input['name']);
         $updated = $client->update($input);
 
         if ($updated) {
             return redirect('clients')->with('success', 'Tu cliente fue actualizada.');
-        } else {
-            return redirect()->withInput($input)->with('error', 'It was not possible to update the client.');
         }
+        return redirect()->withInput($input)->with('error', 'It was not possible to update the client.');
     }
 
     /**
@@ -94,8 +93,8 @@ class ClientsController extends Controller
             $client->jobs()->delete();
             $client->delete();
             return redirect('clients')->with('success', 'El cliente fue eliminado.');
-        } else {
-            return redirect('clients')->with('error', 'Ocurrio un error tratando de eliminar esta cliente.');
         }
+
+        return redirect('clients')->with('error', 'Ocurrio un error tratando de eliminar esta cliente.');
     }
 }
