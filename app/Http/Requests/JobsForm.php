@@ -24,7 +24,7 @@ class JobsForm extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|min:10|max:100',
+            'title'     => 'required|min:10|max:100',
             'client_id' => 'required'
         ];
     }
@@ -32,9 +32,9 @@ class JobsForm extends FormRequest
     public function messages()
     {
         return [
-            'title.required' => 'El campo de título es obligatorio',
-            'title.min' => 'El campo de título debe tener al menos 10 caracteres.',
-            'title.max' => 'El campo de título debe tener como maximo 100 caracteres.',
+            'title.required'      => 'El campo de título es obligatorio',
+            'title.min'           => 'El campo de título debe tener al menos 10 caracteres.',
+            'title.max'           => 'El campo de título debe tener como maximo 100 caracteres.',
             'client_id.required'  => 'Selecciona un cliente',
         ];
     }
