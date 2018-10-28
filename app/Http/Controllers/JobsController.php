@@ -38,16 +38,18 @@ class JobsController extends Controller
     {
         $input = array_except($request->all(), ['_token']);
         $created = $this->model->create($input);
+
         if ($created) {
             return redirect('jobs')->with('success', 'Tu vacante fue agregada a la lista de activas.');
-        } else {
-            return redirect()->withInput($input)->with('error', 'It was not possible to create the new job.');
         }
+
+        return redirect()->withInput($input)->with('error', 'It was not possible to create the new job.');
     }
 
     public function edit($client, $id)
     {
         $job = $this->model->find( $id);
+
         return view('jobs.edit', compact('job'));
     }
 
@@ -56,21 +58,24 @@ class JobsController extends Controller
         $job = $this->model->find($id);
         $input = array_except($request->all(), ['_token']);
         $updated = $job->update($input);
+
         if ($updated) {
             return redirect('jobs')->with('success', 'Tu vacante fue actualizada.');
-        } else {
-            return redirect()->withInput($input)->with('error', 'It was not possible to update the job.');
         }
+
+        return redirect()->withInput($input)->with('error', 'It was not possible to update the job.');
     }
 
-    public function delete($id) {
+    public function delete($id)
+    {
         $job = $this->model->find($id);
+
         if ($job) {
             $job->delete();
             return redirect('jobs')->with('success', 'Tu vacante fue eliminado.');
-        } else {
-            return redirect('jobs')->with('error', 'Ocurrio un error tratando de eliminar esta vacante.');
         }
+
+        return redirect('jobs')->with('error', 'Ocurrio un error tratando de eliminar esta vacante.');
     }
 
 
